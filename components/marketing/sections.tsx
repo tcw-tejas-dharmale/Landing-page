@@ -165,33 +165,88 @@ export function DashboardSection() {
   return (
     <section className="section-block dashboard-showcase" id="dashboard">
       <div className="container-shell">
-        <div className="dashboard-showcase-frame grid items-start gap-10 xl:grid-cols-[minmax(340px,0.95fr)_minmax(0,1.05fr)]">
-          <div className="dashboard-showcase-copy reveal-up min-w-0">
-          <p className="eyebrow">Email dashboard</p>
-          <h2 className="section-title mt-4">Verify campaigns and project health in one command view.</h2>
-          <p className="section-lead">
-            Dense, fast, and review-ready. Track metrics, scan checks, and close blockers without leaving the dashboard.
+        <div className="text-center mb-16">
+          <p className="eyebrow">Enterprise Intelligence</p>
+          <h2 className="section-title mt-4">Command center for your revenue operations.</h2>
+          <p className="section-lead mx-auto">
+            A unified view of your entire outbound engine. Designed for clarity, optimized for speed.
           </p>
+        </div>
 
-          <ul className="dashboard-benefits mt-7 grid gap-3">
-            <li className="dashboard-benefit">Animated KPI progress + weekly target</li>
-            <li className="dashboard-benefit">Live verification queue with status states</li>
-            <li className="dashboard-benefit">Project review tracker with completion flow</li>
-          </ul>
+        <div className="grid gap-8">
+          <div className="surface-card overflow-hidden reveal-up">
+            <div className="aspect-[16/9] relative">
+              <img 
+                src="/images/dashboard-main.png" 
+                alt="Main Analytics Dashboard" 
+                className="object-cover w-full h-full"
+              />
+            </div>
+            <div className="p-8 border-t border-line">
+              <div className="grid md:grid-cols-3 gap-8">
+                <div>
+                  <h3 className="text-lg font-bold">Real-time Signals</h3>
+                  <p className="mt-2 text-sm text-ink-700 leading-relaxed">
+                    Instantly identify high-intent accounts with our proprietary signal scoring engine.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold">Predictive KPI Tracking</h3>
+                  <p className="mt-2 text-sm text-ink-700 leading-relaxed">
+                    Forecast pipeline impact with 94% accuracy based on historical campaign performance.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold">Automated Governance</h3>
+                  <p className="mt-2 text-sm text-ink-700 leading-relaxed">
+                    Built-in guardrails ensure every message adheres to your brand and compliance standards.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
 
-          <div className="mt-8 flex flex-wrap gap-3">
-            <a className="button-primary" href="#verification">
-              Review verification
-            </a>
-            <a className="button-secondary" href="#contact">
-              Request walkthrough
-            </a>
+          <div className="grid lg:grid-cols-2 gap-8">
+            <div className="surface-card overflow-hidden reveal-up delay-1">
+              <div className="aspect-[4/3] relative">
+                <img 
+                  src="/images/dashboard-detail.png" 
+                  alt="Detailed Metrics" 
+                  className="object-cover w-full h-full"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold">Granular Performance</h3>
+                <p className="mt-2 text-ink-700 text-sm">
+                  Drill down into individual sequence steps and segment performance.
+                </p>
+              </div>
+            </div>
+            <div className="surface-card overflow-hidden reveal-up delay-2">
+              <div className="aspect-[4/3] relative">
+                <img 
+                  src="/images/feature-1.png" 
+                  alt="AI Workflow" 
+                  className="object-cover w-full h-full"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold">Intelligent Automation</h3>
+                <p className="mt-2 text-ink-700 text-sm">
+                  Automate the heavy lifting of lead research and message personalization.
+                </p>
+              </div>
+            </div>
           </div>
-          </div>
+        </div>
 
-          <div className="reveal-up delay-1 min-w-0">
-            <EmailDashboard />
-          </div>
+        <div className="mt-16 flex justify-center gap-4">
+          <a className="button-primary" href="#contact">
+            Request personalized demo
+          </a>
+          <a className="button-secondary" href="#architecture">
+            View technical specs
+          </a>
         </div>
       </div>
     </section>
